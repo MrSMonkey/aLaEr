@@ -1,0 +1,11 @@
+<!-- 组件 custom-component.wxml -->
+<shopping-bar class="shopping-bar">
+  <view class="orders-btn">
+    <van-icon name="orders-o"  size="50rpx"/>
+  </view>
+  <view class="goods-info-wrap">
+    <van-icon name="bars" size="50rpx"/>
+    <view>已选商品<text>72</text>件</view>
+  </view>
+  <view class="shopping-btn">马上下单</view>
+</shopping-bar>

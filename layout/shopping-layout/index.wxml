@@ -1,0 +1,8 @@
+<view class="shopping-layout">
+  <view class="shopping-main">
+    <slot></slot>
+  </view>
+  <view class="footer-wrap">
+    <shopping-bar/>
+  </view>
+</view>

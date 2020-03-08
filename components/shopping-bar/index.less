@@ -1,0 +1,41 @@
+.shopping-bar {
+  background: #fff;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  .orders-btn {
+    width: 140rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &::after{
+      content: '';
+      position: absolute;
+      background: #ccc;
+      height: 60rpx;
+      left: 140rpx;
+      display: block;
+      width: 4rpx;
+      top: 15rpx;
+    }
+  }
+  .goods-info-wrap{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 30px;
+    align-items: center;
+    >view:last-child{
+      margin: 0 0 0 10rpx;
+    }
+  }
+  .shopping-btn{
+    width: 200rpx;
+    text-align: center;
+    line-height: 90rpx;
+    background: rgb(231, 56,35);
+    color: #fff;
+  }
+}

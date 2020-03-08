@@ -1,0 +1,6 @@
+.banner-wrap {
+  height: 150px;
+}
+.banner-wrap image {
+  width: 100%;
+}

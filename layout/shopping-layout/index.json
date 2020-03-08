@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "shopping-bar": "../../components/shopping-bar/index"
+  }
+}

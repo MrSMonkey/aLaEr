@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "商城首页",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button",
+    "van-tab": "@vant/weapp/tab",
+    "van-tabs": "@vant/weapp/tabs",
+    "van-sidebar": "@vant/weapp/sidebar",
+    "van-sidebar-item": "@vant/weapp/sidebar-item",
+    "van-sticky": "@vant/weapp/sticky",
+    "banner": "../../components/banner/index",
+    "shopping-layout": "../../layout/shopping-layout/index",
+    "shopping-bar": "../../components/shopping-bar/index"
+  }
+}

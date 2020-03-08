@@ -1,0 +1,41 @@
+.shopping-bar {
+  background: #fff;
+  height: 90rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.shopping-bar .orders-btn {
+  width: 140rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shopping-bar .orders-btn::after {
+  content: '';
+  position: absolute;
+  background: #ccc;
+  height: 60rpx;
+  left: 140rpx;
+  display: block;
+  width: 4rpx;
+  top: 15rpx;
+}
+.shopping-bar .goods-info-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 30px;
+  align-items: center;
+}
+.shopping-bar .goods-info-wrap > view:last-child {
+  margin: 0 0 0 10rpx;
+}
+.shopping-bar .shopping-btn {
+  width: 200rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background: #e73823;
+  color: #fff;
+}

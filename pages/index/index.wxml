@@ -1,0 +1,183 @@
+<!-- 商城首页 -->
+<shopping-layout class="shopping-layout">
+  <view class="header-wrap">
+    <banner banner-list="{{homeBannerList}}"/>
+  </view>
+  <view class="send-tip-wrap">
+    配送说明（新客必看）
+  </view>
+  <view class="main">
+    <van-tabs sticky>
+      <van-tab title="商城商品">
+        <view class="goods-wrap">
+          <view class="goods-menu-wrap">
+            <van-sidebar active-key="{{ activeKey }}" bind:change="onChange" custom-class="goods-menu">
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+              <van-sidebar-item title="标签名称" />
+            </van-sidebar>
+          </view>
+          <view class="goods-list-wrap"></view>
+        </view>
+      </van-tab>
+      <van-tab title="商城商家">
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+        <view>内容 1</view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</shopping-layout>
+
+<!-- <view class="shopping-layout">
+  <view class="shopping-main">
+    <view class="header-wrap">
+      <banner banner-list="{{homeBannerList}}"/>
+    </view>
+    <view class="send-tip-wrap">
+      配送说明（新客必看）
+    </view>
+    <view class="main">
+      <van-tabs sticky>
+        <van-tab title="商城商品">
+          <view class="goods-wrap">
+            <view class="goods-menu-wrap">
+              <van-sidebar active-key="{{ activeKey }}" bind:change="onChange" custom-class="goods-menu">
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+                <van-sidebar-item title="标签名称" />
+              </van-sidebar>
+            </view>
+            <view class="goods-list-wrap"></view>
+          </view>
+        </van-tab>
+        <van-tab title="商城商家">
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+          <view>内容 1</view>
+        </van-tab>
+      </van-tabs>
+    </view>
+  </view>
+  <view class="footer-wrap">
+    <shopping-bar/>
+  </view>
+</view> -->
