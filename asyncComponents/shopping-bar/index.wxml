@@ -1,0 +1,51 @@
+<!-- 组件 custom-component.wxml -->
+<shopping-bar class="shopping-bar">
+  <view class="more-menu-btn" bindtap="onMoreMenuTap">
+    <van-icon name="user-o" size="36rpx" color="{{iconColor}}"/>
+    <view class="text">我的</view>
+  </view>
+  <view class="goods-info-wrap">
+    <van-icon name="shopping-cart-o" size="50rpx" color="{{iconColor}}"/>
+    <view>已选商品<text>72</text>件</view>
+  </view>
+  <view class="shopping-btn" bind:tap="clickBookBtnHandler">
+    <view>马上下单</view>
+  </view>
+  <van-transition show="{{ isShowExtraMenu }}">
+    <!-- <view class="extra-menu-wrap">
+      <view class="item">我的订单</view>
+      <view class="item">地址管理</view>
+      <view class="item">免责声明</view>
+      <view class="item">我要投诉</view>
+    </view> -->
+    <van-grid class="extra-menu-wrap" custom-class="custom-class">
+      <van-grid-item icon="orders-o" text="我的订单" />
+      <van-grid-item icon="location-o" text="地址管理" />
+      <van-grid-item icon="description" text="免责声明" />
+      <van-grid-item icon="envelop-o" text="我要投诉" />
+    </van-grid>
+  </van-transition>
+  <van-overlay show="{{ show }}" bind:click="hidePayModal">
+    <view class="book-info-wrapper">
+      <view class="book-info-content">
+        <van-cell-group>
+          <van-cell title="收货地址" value="{{customAddress}}" />
+          <van-cell title="收货人" value="{{customName}}" />
+          <van-cell title="联系电话" value="{{customTel}}" />
+        </van-cell-group>
+        <view>绝对是连接法兰了看见爱上对方</view>
+        <view>
+          <van-card
+            num="2"
+            price="2.00"
+            desc="描述信息"
+            title="商品标题"
+          />
+        </view>
+      </view>
+    </view>
+  </van-overlay>
+  <van-overlay show="{{ isShowExtraMenu }}" z-index="-1" bind:click="onMoreMenuTap"/>
+</shopping-bar>
+
+  

@@ -1,0 +1,56 @@
+@import "../../less/variable.less";
+.good-item{
+  --card-thumb-size: auto;
+  width: 100%;
+  .title{
+    font-size: 28rpx;
+    color: @font-default;
+  }
+  .van-card{
+    padding-left: 16rpx;
+    padding-right: 16rpx;
+    background: #fff;
+  }
+  .thumb{
+    width: 144rpx;
+    height: 144rpx;
+  }
+  .item-desc{
+    color: @font-default2;
+    margin-top: 6rpx;
+    &>view{
+      height: 32rpx;
+      line-height: 32rpx;
+    }
+  }
+  .item-bottom{
+    display: flex;
+    justify-content: space-between;
+    .price-wrap{
+      flex: 1;
+      display: flex;
+      justify-content: flex-start;
+      .salling-price{
+        color: @font-default4;
+        margin-right: 16rpx;
+        text:last-child{
+          font-size: 28rpx;
+        }
+      }
+      .original-price{
+        color: @font-default3;
+        text-decoration:line-through;
+      }
+    }
+    .item-btn-wrap{
+      display: flex;
+      justify-content: flex-end;
+      .buy-count{
+        width: 30rpx;
+        text-align: center;
+        color: @font-default;
+      }
+    }
+
+  }
+}

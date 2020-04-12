@@ -1,30 +1,70 @@
-.shopping-main{
-  flex: 1;
-  // overflow-y: auto;
-  display: flex;
-  flex-direction: column;
+@import "../../less/variable.less";
+.send-tip-wrap{
+  text-align: center;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: @font-default;
 }
-  .send-tip-wrap{
-    text-align: center;
-    height: 90rpx;
-    line-height: 90rpx;
+.main{
+  flex: 1;
+  overflow: hidden;
+  .fx-c();
+  .tabs-bar{
+    color: @font-default;
+    display: flex;
+    justify-content: space-between;
+    .tab-btn{
+      border: 1px solid @border-default;
+      border-width: 1px 0;
+      height: 68rpx;
+      line-height: 68rpx;
+      flex: 1;
+      text-align: center;
+      color: @font-default;
+    }
+    .active-tab{
+      .light-css();
+    }
   }
-  .main{
+  .tabs-content{
     flex: 1;
+    overflow: hidden;
+    .tab-content{
+      height: 100%;
+      overflow: hidden;
+    }
     .goods-wrap {
       display: flex;
       justify-content: space-between;
       .goods-menu-wrap{
-        width: 140rpx;
+        // height: 100%;
         overflow-x: hidden;
-        overflow-y: hidden;
+        overflow-y: scroll;
+        --sidebar-selected-border-color: @light-default2; // 修改选中后默认的边框颜色
+        .van-sidebar{
+          width: 180rpx;
+          height: 100%;
+          background: @bg-deault2;
+          .van-sidebar-item{
+            padding: 14rpx 0 14rpx 20rpx;
+          }
+          .van-sidebar-item{
+            padding: 14rpx 0 14rpx 20rpx;
+            background: transparent;
+          }
+          .van-sidebar-item--selected{
+            padding-top: 7px;
+            padding-bottom: 7px;
+            color: @font-light2;
+            background: @bg-light2;
+          }
+
+        }
       }
       .goods-list-wrap{
         flex: 1;
+        overflow-y: scroll;
       }
     }
   }
-  .footer-wrap{
-    width: 100%;
-    height: 90rpx;
-  }
+}

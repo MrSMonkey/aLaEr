@@ -1,0 +1,68 @@
+/*
+ * @Author: Lichunlin
+ * @Date: 2020-03-08 17:01:22
+ * @Email: 504234675@qq.com
+ * @LastEditors  : Lichunlin
+ * @LastEditTime : 2020-04-12 13:12:19
+ * @Description: 系统样式表
+ */
+@wxApp-theme-color: #E73823; // app主题色：请不要再书写样式过程中使用此变量，仅用于以后更改
+@light-default: @wxApp-theme-color; // 高亮色：请不要再书写样式过程中使用此变量，仅用于以后更改
+@light-default2: #fff; // 高亮色：请不要再书写样式过程中使用此变量，仅用于以后更改
+
+
+
+// background
+@bg-default: @wxApp-theme-color;
+@bg-default2: #F5F5F5;
+@bg-default3: #fff;
+@bg-light: @light-default; // 背景高亮
+@bg-light2: @light-default2; // 背景高亮
+
+//font
+@font-default: #3F3F3F;
+@font-default2: #80879A;
+@font-default3: #B9B9B9;
+@font-default4: @wxApp-theme-color;
+@font-default5: #fff;
+@font-light: @light-default2; // 字体高亮
+@font-light2: @light-default; // 字体高亮
+
+//border
+@border-default:  #E5E5E5;
+@border-default2:  @wxApp-theme-color;
+@border-light: @light-default; // 边框高亮
+
+
+// 高亮样式1
+.light-css () {
+  border-color: @border-light;
+  background: @bg-light;
+  color: @font-light;
+}
+
+// 高亮样式2
+.light-css2 () {
+  border-color: @border-light;
+  background: @bg-light2;
+  color: @font-light2;
+}
+
+.fx-c{
+  display: flex;
+  flex-direction: column;
+}
+.fx-r-sb{
+  display: flex;
+  justify-content: space-between;
+}
+
+.fx-r-sb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hide{
+  display: none !important;
+}

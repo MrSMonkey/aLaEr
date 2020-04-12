@@ -1,0 +1,81 @@
+@import "../../less/variable.less";
+.shopping-bar {
+  background: #fff;
+  // position: relative;
+  padding: 6rpx 8rpx;
+  display: flex;
+  justify-content: space-between;
+  .extra-menu-wrap{
+    .fx-r-sb();
+    background: #fff;
+    // height: 180rpx;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100rpx;
+    border: 1px solid #ddd;
+    border-width: 1rpx 0;
+    &>view{
+      width: 100%;
+    }
+  }
+  .more-menu-btn {
+    width: 180rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: @font-default;
+    font-size: 24rpx;
+    &::after{
+      content: '';
+      position: absolute;
+      background: @border-default;
+      height: 72rpx;
+      left: 180rpx;
+      display: block;
+      width: 1px;
+      top: 14rpx;
+      transform: scaleX(.5);
+    }
+    .text{
+      margin-left: 10rpx;
+    }
+  }
+  .goods-info-wrap{
+    flex: 1;
+    display: flex;
+    padding: 0 20rpx;
+    justify-content: flex-start;
+    align-items: center;
+    >view:last-child{
+      color: @font-default;
+      font-size: 24rpx;
+      margin: 0 0 0 10rpx;
+    }
+  }
+  .shopping-btn{
+    padding: 0 20rpx;
+    font-size: 28rpx;
+    text-align: center;
+    height: 88rpx;
+    line-height: 94rpx;
+    background: @bg-default;
+    color: @font-default5;
+    border-radius: 8rpx;
+  }
+  .van-icon{
+    color: @font-default;
+  }
+  .book-info-wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    .book-info-content{
+      margin: 0 30rpx;
+      background: #fff;
+    }
+  }
+}

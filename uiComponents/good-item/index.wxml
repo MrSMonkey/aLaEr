@@ -1,0 +1,34 @@
+<!-- 组件 custom-component.wxml -->
+<good-item class="good-item">
+  <van-card
+    title="{{dataSource.goodName}}"
+    thumb="../../../../imgs/others/goodThumb1.jpg"
+    lazy-load="{{true}}"
+    title-class="title"
+    thumb-class="thumb"
+    custom-class="van-card"
+  >
+    <view slot="desc" class="item-desc">
+      <view><van-icon name="location-o" /> {{dataSource.merchantName}}</view>
+      <view>库存：{{dataSource.inventoryDesc}}</view>
+    </view>
+    <view slot="price" class="item-bottom">
+      <view class="price-wrap">
+        <view class="salling-price">
+          <text>￥</text>
+          <text>{{dataSource.sallingPrice}}</text>
+        </view>
+        <view class="original-price">
+          <text>￥</text>
+          <text>{{dataSource.originalPrice}}</text>
+        </view>
+      </view>
+      <view class="item-btn-wrap">
+        <addOrSub-btn wx:if="{{dataSource.buyCount > 0}}" bind:tap="onSubTap" icon-type="sub"/>
+        <view wx:if="{{dataSource.buyCount > 0}}" class="buy-count">{{dataSource.buyCount}}</view>
+        <addOrSub-btn bind:tap="onAddTap" icon-type="add"/>
+      </view>
+      
+    </view>
+  </van-card>
+</good-item>

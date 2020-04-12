@@ -35,6 +35,12 @@ App({
   },
   globalData: {
     userInfo: null,
-    homeBannerList: ['../../imgs/banner/timg.jpg', '../../imgs/banner/timg (1).jpg'],
+    homeBannerList: ['../../imgs/banner/b_img.jpg'],
+    shoppingCart: {
+      goodsList: [
+        {id: 1, buyCount: 1},
+        {id: 2, buyCount: 0}
+      ],
+    }
   }
 })

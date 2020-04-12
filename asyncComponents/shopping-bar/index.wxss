@@ -1,0 +1,104 @@
+/*
+ * @Author: Lichunlin
+ * @Date: 2020-03-08 17:01:22
+ * @Email: 504234675@qq.com
+ * @LastEditors  : Lichunlin
+ * @LastEditTime : 2020-04-12 13:12:19
+ * @Description: 系统样式表
+ */
+.fx-c {
+  display: flex;
+  flex-direction: column;
+}
+.fx-r-sb {
+  display: flex;
+  justify-content: space-between;
+}
+.fx-r-sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hide {
+  display: none !important;
+}
+.shopping-bar {
+  background: #fff;
+  padding: 6rpx 8rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.shopping-bar .extra-menu-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100rpx;
+  border: 1px solid #ddd;
+  border-width: 1rpx 0;
+}
+.shopping-bar .extra-menu-wrap > view {
+  width: 100%;
+}
+.shopping-bar .more-menu-btn {
+  width: 180rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #3F3F3F;
+  font-size: 24rpx;
+}
+.shopping-bar .more-menu-btn::after {
+  content: '';
+  position: absolute;
+  background: #E5E5E5;
+  height: 72rpx;
+  left: 180rpx;
+  display: block;
+  width: 1px;
+  top: 14rpx;
+  transform: scaleX(0.5);
+}
+.shopping-bar .more-menu-btn .text {
+  margin-left: 10rpx;
+}
+.shopping-bar .goods-info-wrap {
+  flex: 1;
+  display: flex;
+  padding: 0 20rpx;
+  justify-content: flex-start;
+  align-items: center;
+}
+.shopping-bar .goods-info-wrap > view:last-child {
+  color: #3F3F3F;
+  font-size: 24rpx;
+  margin: 0 0 0 10rpx;
+}
+.shopping-bar .shopping-btn {
+  padding: 0 20rpx;
+  font-size: 28rpx;
+  text-align: center;
+  height: 88rpx;
+  line-height: 94rpx;
+  background: #E73823;
+  color: #fff;
+  border-radius: 8rpx;
+}
+.shopping-bar .van-icon {
+  color: #3F3F3F;
+}
+.shopping-bar .book-info-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  top: 40%;
+  left: 50%;
+}
+.shopping-bar .book-info-wrapper .book-info-content {
+  margin: 0 30rpx;
+  background: #fff;
+}

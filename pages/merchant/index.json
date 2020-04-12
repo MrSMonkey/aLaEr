@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "商家首页",
+  "usingComponents": {
+    "van-sidebar": "@vant/weapp/sidebar",
+    "van-sidebar-item": "@vant/weapp/sidebar-item",
+    "van-dialog": "/@vant/weapp/dialog",
+    "shopping-layout": "../../layout/shopping-layout/index",
+    "pay-modal": "../../asyncComponents/pay-modal/index"
+  }
+}

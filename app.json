@@ -1,13 +1,14 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/merchant/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#E73823",
+    "navigationBarTitleText": "阿拉尔商城",
+    "navigationBarTextStyle": "white"
   },
   "sitemapLocation": "sitemap.json"
 }

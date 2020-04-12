@@ -7,177 +7,46 @@
     配送说明（新客必看）
   </view>
   <view class="main">
-    <van-tabs sticky>
-      <van-tab title="商城商品">
-        <view class="goods-wrap">
-          <view class="goods-menu-wrap">
-            <van-sidebar active-key="{{ activeKey }}" bind:change="onChange" custom-class="goods-menu">
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-              <van-sidebar-item title="标签名称" />
-            </van-sidebar>
-          </view>
-          <view class="goods-list-wrap"></view>
+    <view class="tabs-bar">
+      <view
+        class="tab-btn {{activeKey === activeKeyArr[0] ? 'active-tab' : ''}}"
+        bind:tap="clickTabBtnHandler"
+        data-tab-key="{{activeKeyArr[0]}}"
+      >
+        商城商品
+      </view>
+      <view
+        class="tab-btn {{activeKey === activeKeyArr[1] ? 'active-tab' : ''}}"
+        bind:tap="clickTabBtnHandler"
+        data-tab-key="{{activeKeyArr[1]}}"
+      >
+        商城商家
+      </view>
+    </view>
+    <view class="tabs-content">
+      <view class="tab-content goods-wrap {{activeKey === activeKeyArr[0] ? '' : 'hide'}}">
+        <view class="goods-menu-wrap">
+          <van-sidebar active-key="{{ activeKey }}" bind:change="clickMenuItemHandler" custom-class="goods-menu">
+            <van-sidebar-item wx:for="{{menuList}}" wx:key="id" data-menu-id="{{item.id}}" title="{{item.title}}" />
+          </van-sidebar>
         </view>
-      </van-tab>
-      <van-tab title="商城商家">
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-        <view>内容 1</view>
-      </van-tab>
-    </van-tabs>
+        <view class="goods-list-wrap">
+          <view class="good-item">
+            <good-item
+              wx:for="{{goodsList}}"
+              wx:key="id"
+              dataSource="{{item}}"
+              bind:onAddTap="onAddTap"
+              bind:onSubTap="onSubTap"
+              data-good-id="{{item.id}}"
+            />
+          </view>
+        </view>
+      </view>
+      <view class="tab-content {{activeKey === activeKeyArr[1] ? '' : 'hide'}}">
+        <view class='good-item' bind:tap="clickMerchantItemHandler">商城商家</view>
+      </view>
+    </view>
   </view>
 </shopping-layout>
 
-<!-- <view class="shopping-layout">
-  <view class="shopping-main">
-    <view class="header-wrap">
-      <banner banner-list="{{homeBannerList}}"/>
-    </view>
-    <view class="send-tip-wrap">
-      配送说明（新客必看）
-    </view>
-    <view class="main">
-      <van-tabs sticky>
-        <van-tab title="商城商品">
-          <view class="goods-wrap">
-            <view class="goods-menu-wrap">
-              <van-sidebar active-key="{{ activeKey }}" bind:change="onChange" custom-class="goods-menu">
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-                <van-sidebar-item title="标签名称" />
-              </van-sidebar>
-            </view>
-            <view class="goods-list-wrap"></view>
-          </view>
-        </van-tab>
-        <van-tab title="商城商家">
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-          <view>内容 1</view>
-        </van-tab>
-      </van-tabs>
-    </view>
-  </view>
-  <view class="footer-wrap">
-    <shopping-bar/>
-  </view>
-</view> -->
