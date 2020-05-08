@@ -2,11 +2,11 @@
   "component": true,
   "usingComponents": {
     "van-icon": "@vant/weapp/icon",
-    "van-overlay": "/@vant/weapp/overlay",
+    "van-overlay": "@vant/weapp/overlay",
     "van-cell": "@vant/weapp/cell",
     "van-cell-group": "@vant/weapp/cell-group",
-    "van-transition": "/@vant/weapp/transition",
-    "van-card": "/@vant/weapp/card",
+    "van-transition": "@vant/weapp/transition",
+    "van-card": "@vant/weapp/card",
     "van-grid": "@vant/weapp/grid/index",
     "van-grid-item": "@vant/weapp/grid-item/index"
   }

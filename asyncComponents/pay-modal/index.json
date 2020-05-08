@@ -1,6 +1,6 @@
 {
   "component": true,
   "usingComponents": {
-    "van-overlay": "/@vant/weapp/overlay"
+    "van-overlay": "@vant/weapp/overlay"
   }
 }
