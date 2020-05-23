@@ -1,8 +1,8 @@
 <!-- 组件 custom-component.wxml -->
-<good-item class="good-item">
+<good-card class="good-card">
   <van-card
     title="{{dataSource.goodName}}"
-    thumb="../../../../imgs/others/goodThumb1.jpg"
+    thumb="{{dataSource.img}}"
     lazy-load="{{true}}"
     title-class="title"
     thumb-class="thumb"
@@ -31,4 +31,4 @@
       
     </view>
   </van-card>
-</good-item>
+</good-card>

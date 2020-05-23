@@ -11,6 +11,7 @@
     "banner": "../../uiComponents/banner/index",
     "shopping-layout": "../../layout/shopping-layout/index",
     "shopping-bar": "../../asyncComponents/shopping-bar/index",
-    "good-item": "../../uiComponents/good-item/index"
+    "good-card": "../../uiComponents/good-card/index",
+    "merchant-card": "../../uiComponents/merchant-card/index"
   }
 }

@@ -3,7 +3,7 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-04-12 13:12:19
+ * @LastEditTime : 2020-05-23 17:20:13
  * @Description: 系统样式表
  */
 .fx-c {
@@ -19,59 +19,64 @@
   justify-content: space-between;
   align-items: center;
 }
+.fx-r-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .hide {
   display: none !important;
 }
-.good-item {
+.good-card {
   --card-thumb-size: auto;
   width: 100%;
 }
-.good-item .title {
+.good-card .title {
   font-size: 28rpx;
   color: #3F3F3F;
 }
-.good-item .van-card {
+.good-card .van-card {
   padding-left: 16rpx;
   padding-right: 16rpx;
   background: #fff;
 }
-.good-item .thumb {
+.good-card .thumb {
   width: 144rpx;
   height: 144rpx;
 }
-.good-item .item-desc {
+.good-card .item-desc {
   color: #80879A;
   margin-top: 6rpx;
 }
-.good-item .item-desc > view {
+.good-card .item-desc > view {
   height: 32rpx;
   line-height: 32rpx;
 }
-.good-item .item-bottom {
+.good-card .item-bottom {
   display: flex;
   justify-content: space-between;
 }
-.good-item .item-bottom .price-wrap {
+.good-card .item-bottom .price-wrap {
   flex: 1;
   display: flex;
   justify-content: flex-start;
 }
-.good-item .item-bottom .price-wrap .salling-price {
+.good-card .item-bottom .price-wrap .salling-price {
   color: #E73823;
   margin-right: 16rpx;
 }
-.good-item .item-bottom .price-wrap .salling-price text:last-child {
+.good-card .item-bottom .price-wrap .salling-price text:last-child {
   font-size: 28rpx;
 }
-.good-item .item-bottom .price-wrap .original-price {
+.good-card .item-bottom .price-wrap .original-price {
   color: #B9B9B9;
   text-decoration: line-through;
 }
-.good-item .item-bottom .item-btn-wrap {
+.good-card .item-bottom .item-btn-wrap {
   display: flex;
   justify-content: flex-end;
 }
-.good-item .item-bottom .item-btn-wrap .buy-count {
+.good-card .item-bottom .item-btn-wrap .buy-count {
   width: 30rpx;
   text-align: center;
   color: #3F3F3F;

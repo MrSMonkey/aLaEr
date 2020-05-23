@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    merchantName: '红旗连锁超市金岳西路店',
     merchantImg: '../../imgs/banner/b_img.jpg',
     merchantAddress: '重庆',
     merchantTel: '13588992888',

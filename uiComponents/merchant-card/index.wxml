@@ -1,0 +1,17 @@
+<!-- 组件:商家卡片 merchant-card.wxml -->
+<merchant-card class="merchant-card" bind:tap="clickItemHandler">
+  <view>
+    <view class="card-thumb-img" bind:tap="clickThumbHandler">
+      <image class="banner-img" src="{{dataSource.img}}" mode="scaleToFill"/>
+    </view>
+  </view>
+  <view>
+    <view class="card-content" bind:tap="clickContentHandler">
+      <view class="merchant-info-wrap">
+        <view class="merchant-name">{{dataSource.merchantName}}</view>
+        <view class="merchant-distance">{{dataSource.distance}}{{dataSource.unit}}</view>
+      </view>
+      <view class="merchant-url-btn" bind:tap="clickLinkHandler">进入店铺>></view>
+    </view>
+  </view>
+</merchant-card>

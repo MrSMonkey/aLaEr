@@ -4,7 +4,7 @@ const tempActiveKey = [1,2];
 Page({
   data: {
     activeKeyArr: tempActiveKey,
-    activeKey: tempActiveKey[0],
+    activeKey: tempActiveKey[1],
     menuList: [
       {id: 1, title: '推荐'},
       {id: 2, title: '蔬菜'},
@@ -48,6 +48,21 @@ Page({
         originalPrice: '4.99',
       }
     ],
+    merchantList: [
+      {
+        id: 3,
+        img: '../../imgs/others/merchant_logo.png',
+        merchantName: '红旗连锁超市金岳西路店',
+        distance: 500,
+        unit: '米'
+      }, {
+        id: 6,
+        img: '../../imgs/others/merchant_logo.png',
+        merchantName: '红旗连锁超市金岳西路店',
+        distance: 500,
+        unit: '米'
+      }
+    ],
     ...globalData,
   },
   clickTabBtnHandler(e) {
@@ -56,19 +71,20 @@ Page({
       activeKey: e.currentTarget.dataset['tabKey']
     });
   },
+  clickMenuItemHandler(e) {
+    const selectedItem = this.data.menuList[e.detail];
+    console.log('clickMenuItemHandler', selectedItem);
+  },
   onAddTap(e) {
-    console.log(e.currentTarget.dataset['goodId'])
+    console.log(e.currentTarget.dataset['id'])
   },
   onSubTap(e) {
-    console.log(e.currentTarget.dataset['goodId'])
+    console.log(e.currentTarget.dataset['id'])
   },
-  clickMerchantItemHandler(){
+  clickMerchantItemHandler(merchantInfo){
+    console.log('merchantInfo', merchantInfo);
     wx.navigateTo({
       url: '/pages/merchant/index',
     });
   },
-  clickMenuItemHandler(e) {
-    const selectedItem = this.data.menuList[e.detail];
-    console.log('clickMenuItemHandler', selectedItem);
-  }
 })

@@ -76,7 +76,14 @@
 .shopping-bar .goods-info-wrap > view:last-child {
   color: #3F3F3F;
   font-size: 24rpx;
-  margin: 0 0 0 10rpx;
+  margin: 0 0 0 30rpx;
+}
+.shopping-bar .goods-info-wrap > view:last-child .unit {
+  color: #E73823;
+}
+.shopping-bar .goods-info-wrap > view:last-child .amount-number {
+  font-size: 48rpx;
+  color: #E73823;
 }
 .shopping-bar .shopping-btn {
   padding: 0 20rpx;

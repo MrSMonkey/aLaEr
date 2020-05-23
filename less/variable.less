@@ -3,7 +3,7 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-04-12 13:12:19
+ * @LastEditTime : 2020-05-23 22:54:57
  * @Description: 系统样式表
  */
 @wxApp-theme-color: #E73823; // app主题色：请不要再书写样式过程中使用此变量，仅用于以后更改
@@ -18,6 +18,7 @@
 @bg-default3: #fff;
 @bg-light: @light-default; // 背景高亮
 @bg-light2: @light-default2; // 背景高亮
+@bg-active: #fdfdfd; // 点击时高亮
 
 //font
 @font-default: #3F3F3F;
@@ -63,6 +64,47 @@
   align-items: center;
 }
 
+
+.fx-r-cc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fx-d-fc{
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
+
 .hide{
   display: none !important;
+}
+
+.bottomBorder(@border-color: @border-default) {
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  background: @border-color;
+  position: absolute;
+  transform: rotateX(45deg);
+}
+.topBorder(@border-color: @border-default) {
+  content: '';
+  right: 0;
+  left: 0;
+  top: 0;
+  display: block;
+  height: 1px;
+  background: @border-color;
+  position: absolute;
+  transform: rotateX(45deg);
+}
+.textHide{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

@@ -3,7 +3,7 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-04-12 13:12:19
+ * @LastEditTime : 2020-05-23 22:54:57
  * @Description: 系统样式表
  */
 .fx-c {
@@ -19,6 +19,22 @@
   justify-content: space-between;
   align-items: center;
 }
+.fx-r-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fx-d-fc {
+  flex-direction: column;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+}
 .hide {
   display: none !important;
+}
+.textHide {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

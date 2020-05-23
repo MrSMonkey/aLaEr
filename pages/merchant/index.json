@@ -4,6 +4,7 @@
     "van-sidebar": "@vant/weapp/sidebar",
     "van-sidebar-item": "@vant/weapp/sidebar-item",
     "van-dialog": "/@vant/weapp/dialog",
+    "banner": "../../uiComponents/banner/index",
     "shopping-layout": "../../layout/shopping-layout/index",
     "pay-modal": "../../asyncComponents/pay-modal/index"
   }

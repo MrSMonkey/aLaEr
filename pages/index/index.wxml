@@ -31,20 +31,27 @@
           </van-sidebar>
         </view>
         <view class="goods-list-wrap">
-          <view class="good-item">
-            <good-item
+          <view class="good-card">
+            <good-card
               wx:for="{{goodsList}}"
               wx:key="id"
               dataSource="{{item}}"
               bind:onAddTap="onAddTap"
               bind:onSubTap="onSubTap"
-              data-good-id="{{item.id}}"
+              data-id="{{item.id}}"
             />
           </view>
         </view>
       </view>
       <view class="tab-content {{activeKey === activeKeyArr[1] ? '' : 'hide'}}">
-        <view class='good-item' bind:tap="clickMerchantItemHandler">商城商家</view>
+        <merchant-card
+          wx:for="{{merchantList}}"
+          wx:key="id"
+          dataSource="{{item}}"
+          data-id="{{item.id}}"
+          bind:clickItemHandler="clickMerchantItemHandler"
+          bind:clickLinkHandler="clickMerchantItemHandler"
+        />
       </view>
     </view>
   </view>

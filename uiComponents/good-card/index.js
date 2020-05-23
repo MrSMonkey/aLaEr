@@ -1,3 +1,12 @@
+/*
+ * @Author: Lichunlin
+ * @Date: 2020-04-12 13:21:15
+ * @Email: 504234675@qq.com
+ * @LastEditors  : Lichunlin
+ * @LastEditTime : 2020-05-23 15:20:06
+ * @Description: 商品卡片
+ */
+
 const app = getApp();
 Component({
 
