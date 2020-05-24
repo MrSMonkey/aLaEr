@@ -35,7 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    homeBannerList: ['../../imgs/banner/b_img.jpg'],
+    homeBannerList: ['../../../../imgs/banner/b_img.jpg'],
     shoppingCart: {
       goodsList: [
         {id: 1, buyCount: 1},

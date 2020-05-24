@@ -1,0 +1,95 @@
+@import "../../less/variable.less";
+.good-detail-layout{
+  .panel-wrap{
+    border: 1rpx solid @border-default;
+    border-radius: 20rpx;
+    padding: 24rpx 40rpx;
+    margin: 0 10rpx;
+    .desc-row{
+      margin: 12rpx 0 0;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+  .panel-1{
+    margin-top: 20rpx;
+    .title{
+      .fx-r-sbfs();
+      .good-name{
+        flex: 1;
+        font-size: 44rpx;
+        margin: 0 30rpx 0 0;
+        .textHide();
+      }
+      .share{}
+    }
+    .desc-row-1{
+      color: @font-default2;
+    }
+    .desc-row-2{
+      .fx-r-sbc();
+      .price-wrap{
+        .fx-r-fsfs();
+        .salling-price{
+          color: @font-default4;
+          font-size: 44rpx;
+        }
+        .original-price{
+          font-size: 24rpx;
+          color: @font-default3;
+          text-decoration: line-through;
+          margin: 4rpx 0 0 8rpx;
+        }
+      }
+      .btn-wrap{
+        display: inline-block;
+        .add-btn{
+          border-radius: 34rpx;
+          .fx-r-sbc();
+          .theme-btn-css();
+          padding: 8rpx 30rpx;
+          .van-image{
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .panel-2{
+    margin-top: 30rpx;
+    .desc-row{
+      color: @font-default2;
+      text {
+        color: @font-default;
+      }
+    }
+  }
+  .panel-3{
+    margin-top: 30rpx;
+    .title{
+      font-size: 36rpx;
+      text-align: left;
+      color: @font-default;
+    }
+    .desc-row{
+      margin-top: 20rpx;
+      .fx-r-sbc();
+      background: @bg-default4;
+      padding: 24rpx 0;
+      border-radius: 8rpx;
+      >view{
+        padding: 0 0 0 20rpx;
+        color: @font-default3;
+        flex: 1;
+        position: relative;
+        &.right::after{
+          .leftBorder(#D0D0D0, -8rpx, -8rpx);
+        }
+        text{
+          color: @font-default2;
+        }
+      }
+    }
+  }
+}

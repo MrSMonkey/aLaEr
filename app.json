@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/goodDetail/index",
     "pages/index/index",
     "pages/merchant/index",
     "pages/logs/logs"

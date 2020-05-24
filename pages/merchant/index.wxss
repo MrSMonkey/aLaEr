@@ -3,18 +3,21 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-05-23 22:54:57
+ * @LastEditTime : 2020-05-24 16:19:35
  * @Description: 系统样式表
  */
-.fx-c {
+.fx-c-fss {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-.fx-r-sb {
+.fx-r-sbfe {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-.fx-r-sb {
+.fx-r-sbc {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,10 +27,16 @@
   justify-content: center;
   align-items: center;
 }
-.fx-d-fc {
+.fx-c-fec {
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+}
+.fx-c-sbc {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .hide {
@@ -38,20 +47,20 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.merchant-info-wrap {
+.merchant-layout .merchant-info-wrap {
   padding: 30rpx 40rpx;
   border: 1px solid #E5E5E5;
   border-width: 0 0 1px;
   margin-bottom: -1px;
   z-index: 1;
 }
-.merchant-info-wrap .merchant-info-title {
+.merchant-layout .merchant-info-wrap .merchant-info-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   align-items: stretch;
 }
-.merchant-info-wrap .merchant-info-title .merchant-name {
+.merchant-layout .merchant-info-wrap .merchant-info-title .merchant-name {
   font-size: 44rpx;
   flex: 1;
   color: #3F3F3F;
@@ -59,13 +68,14 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.merchant-info-wrap .merchant-info-title .ship-guide {
+.merchant-layout .merchant-info-wrap .merchant-info-title .ship-guide {
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  display: flex;
   align-items: center;
 }
-.merchant-info-wrap .merchant-info-title .ship-guide > view {
+.merchant-layout .merchant-info-wrap .merchant-info-title .ship-guide > view {
+  display: flex;
   font-size: 24rpx;
   color: #80879A;
   border: 1px solid #E5E5E5;
@@ -73,41 +83,98 @@
   padding: 8rpx 12rpx;
   margin: 0 0 0 20rpx;
 }
-.merchant-info-wrap .merchant-info-others {
+.merchant-layout .merchant-info-wrap .merchant-info-others {
   color: #80879A;
   font-size: 28rpx;
 }
-.merchant-info-wrap .merchant-info-others > view {
+.merchant-layout .merchant-info-wrap .merchant-info-others > view {
   margin: 20rpx 0 0 ;
 }
-.search-wrap {
+.merchant-layout .search-wrap {
   height: 90rpx;
   padding: 0 30rpx;
   display: flex;
   align-items: center;
 }
-.search-wrap input {
+.merchant-layout .search-wrap input {
   height: 64rpx;
   line-height: 64rpx;
   font-size: 28rpx;
   text-indent: 10rpx;
   flex: 1;
 }
-.layout-css {
+.merchant-layout .layout-css {
   flex: 1;
   overflow: hidden;
   position: relative;
 }
-.goods-wrap {
+.merchant-layout .goods-wrap {
   display: flex;
   justify-content: space-between;
 }
-.goods-wrap .goods-menu-wrap {
+.merchant-layout .goods-wrap .goods-menu-wrap {
   width: 140rpx;
   overflow-x: hidden;
   overflow-y: scroll;
+  --sidebar-selected-border-color: #fff;
 }
-.goods-wrap .goods-list-wrap {
+.merchant-layout .goods-wrap .goods-menu-wrap .van-sidebar {
+  width: 180rpx;
+  height: 100%;
+  background: #F5F5F5;
+}
+.merchant-layout .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item {
+  padding: 14rpx 0 14rpx 20rpx;
+}
+.merchant-layout .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item {
+  padding: 14rpx 0 14rpx 20rpx;
+  background: transparent;
+}
+.merchant-layout .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item--selected {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #E73823;
+  background: #fff;
+}
+.merchant-layout .goods-wrap .goods-list-wrap {
   flex: 1;
   overflow-y: scroll;
+}
+.merchant-layout .send-introduce-wrap {
+  padding: 30rpx;
+  max-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.merchant-layout .send-introduce-wrap > view {
+  width: 100%;
+}
+.merchant-layout .send-introduce-wrap .introduce-title {
+  position: relative;
+  font-size: 44rpx;
+  color: #3F3F3F;
+  padding: 0 0 30rpx;
+  margin: 0 0 30rpx;
+}
+.merchant-layout .send-introduce-wrap .introduce-title::after {
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  background: #E5E5E5;
+  position: absolute;
+  transform: rotateX(45deg);
+}
+.merchant-layout .send-introduce-wrap .introduce-content {
+  flex: 1;
+  overflow-y: scroll;
+  font-size: 28rpx;
+  color: #3F3F3F;
+}
+.merchant-layout .send-introduce-wrap .introduce-content > view {
+  line-height: 48rpx;
 }

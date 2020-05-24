@@ -3,18 +3,31 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-05-23 22:54:57
+ * @LastEditTime : 2020-05-24 18:05:06
  * @Description: 系统样式表
  */
-.fx-c {
+.fx-c-fss {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-.fx-r-sb {
+.fx-r-sbfe {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-.fx-r-sb {
+.fx-r-sbfs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.fx-r-fsfs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fx-r-sbc {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,10 +37,16 @@
   justify-content: center;
   align-items: center;
 }
-.fx-d-fc {
+.fx-c-fec {
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+}
+.fx-c-sbc {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .hide {

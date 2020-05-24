@@ -51,9 +51,9 @@ Component({
   },
 
   methods: {
-    clickItemHandler(){
-      console.log('clickItemHandler');
-      this.triggerEvent('clickItemHandler');
+    clickCardHandler(){
+      console.log('clickCardHandler');
+      this.triggerEvent('clickCardHandler');
     },
     clickLinkHandler(){
       console.log('clickLinkHandler');

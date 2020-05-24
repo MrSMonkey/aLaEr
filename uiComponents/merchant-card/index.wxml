@@ -1,5 +1,5 @@
 <!-- 组件:商家卡片 merchant-card.wxml -->
-<merchant-card class="merchant-card" bind:tap="clickItemHandler">
+<merchant-card class="merchant-card" bind:tap="clickCardHandler">
   <view>
     <view class="card-thumb-img" bind:tap="clickThumbHandler">
       <image class="banner-img" src="{{dataSource.img}}" mode="scaleToFill"/>

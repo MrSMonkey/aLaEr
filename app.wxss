@@ -11,11 +11,11 @@
   display: flex;
   flex-direction: column;
 }
-.fx-r-sb {
+.fx-r-sbc {
   display: flex;
   justify-content: space-between;
 }
-.fx-r-sb {
+.fx-r-sbc {
   display: flex;
   justify-content: space-between;
   align-items: center;

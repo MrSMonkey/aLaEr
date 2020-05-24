@@ -1,5 +1,5 @@
 <!-- 组件 custom-component.wxml -->
-<good-card class="good-card">
+<good-card class="good-card" bind:tap="clickCardHandler">
   <van-card
     title="{{dataSource.goodName}}"
     thumb="{{dataSource.img}}"
@@ -28,7 +28,6 @@
         <view wx:if="{{dataSource.buyCount > 0}}" class="buy-count">{{dataSource.buyCount}}</view>
         <addOrSub-btn bind:tap="onAddTap" icon-type="add"/>
       </view>
-      
     </view>
   </van-card>
 </good-card>

@@ -1,9 +1,11 @@
 <!-- 组件 custom-component.wxml -->
-<banner class="banner-wrap">
-  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+<banner class="banner-wrap {{customCalss || ''}}">
+  <swiper indicator-dots="{{bannerList && bannerList.length > 1}}" autoplay="{{swiperOptions.autoplay}}" interval="{{swiperOptions.interval}}" duration="{{swiperOptions.duration}}">
       <block wx:for="{{bannerList}}" wx:key="*this">
         <swiper-item>
-          <image class="banner-img" mode="scaleToFill" src="{{item}}"></image>
+          <van-image width="100%" height="100%" fit="fill" src="{{item}}" use-error-slot>
+            <text slot="error">加载失败</text>
+          </van-image>
         </swiper-item>
       </block>
   </swiper>

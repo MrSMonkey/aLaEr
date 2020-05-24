@@ -3,7 +3,7 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-05-23 22:54:57
+ * @LastEditTime : 2020-05-24 18:05:06
  * @Description: 系统样式表
  */
 @wxApp-theme-color: #E73823; // app主题色：请不要再书写样式过程中使用此变量，仅用于以后更改
@@ -16,9 +16,10 @@
 @bg-default: @wxApp-theme-color;
 @bg-default2: #F5F5F5;
 @bg-default3: #fff;
+@bg-default4: #F4F4F4;
 @bg-light: @light-default; // 背景高亮
 @bg-light2: @light-default2; // 背景高亮
-@bg-active: #fdfdfd; // 点击时高亮
+@bg-active: #fcfcfc; // 点击时高亮
 
 //font
 @font-default: #3F3F3F;
@@ -35,8 +36,16 @@
 @border-light: @light-default; // 边框高亮
 
 
+// 主题色按钮样式
+.theme-btn-css () {
+  border-color: @border-light;
+  background: @bg-light;
+  color: @font-light;
+}
+
+
 // 高亮样式1
-.light-css () {
+.active-light-css () {
   border-color: @border-light;
   background: @bg-light;
   color: @font-light;
@@ -49,31 +58,51 @@
   color: @font-light2;
 }
 
-.fx-c{
+.fx-c-fss{
   display: flex;
   flex-direction: column;
-}
-.fx-r-sb{
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: stretch;
 }
 
-.fx-r-sb{
+.fx-r-sbfe{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fx-r-sbfs{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.fx-r-fsfs{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fx-r-sbc{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .fx-r-cc{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fx-d-fc{
+
+.fx-c-fec{
+  display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: center;
+}
+
+.fx-c-sbc{
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -99,6 +128,17 @@
   top: 0;
   display: block;
   height: 1px;
+  background: @border-color;
+  position: absolute;
+  transform: rotateX(45deg);
+}
+.leftBorder(@border-color: @border-default, @top: 0, @bottom: 0, @left: 0 ) {
+  content: '';
+  left: @left;
+  top: @top;
+  bottom: @bottom;
+  display: block;
+  width: 1px;
   background: @border-color;
   position: absolute;
   transform: rotateX(45deg);

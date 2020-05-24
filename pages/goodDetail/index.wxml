@@ -1,0 +1,41 @@
+<!-- 商城首页 -->
+<shopping-layout class="good-detail-layout">
+  <view class="header-wrap">
+    <banner banner-list="{{homeBannerList}}"/>
+  </view>
+  <view class="panel-wrap panel-1">
+    <view class="title">
+      <view class="good-name">{{goodName}}</view>
+      <view class="share">
+        <van-image width="48rpx" height="48rpx" fit="fill" src="../../../../imgs/others/share.svg" />
+      </view>
+    </view>
+    <view class="desc-row desc-row-1">规格：500g</view>
+    <view class="desc-row desc-row-2">
+      <view class="price-wrap">
+        <view class="salling-price">{{sallingPrice}}</view>
+        <view class="original-price">{{originalPrice}}</view>
+      </view>
+      <view class="btn-wrap">
+        <view class="add-btn">
+          <view class="add-btn-text">加入购物车</view>
+          <van-image width="44rpx" height="44rpx" src="../../../../imgs/others/addSelect.svg" />
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="panel-wrap panel-2">
+    <view class="desc-row">活动：<text>店铺满100件20</text></view> 
+    <view class="desc-row">配送：<text>满足条件即可享受30分钟免费配送</text></view> 
+  </view>
+  <view class="panel-wrap panel-3">
+    <view class="title">
+      <view class="good-name">商品详情</view>
+    </view>
+    <view class="desc-row">
+      <view class="left">单位：<text>份</text></view>
+      <view class="right">重量：<text>500g</text></view>
+    </view> 
+  </view>
+</shopping-layout>
+

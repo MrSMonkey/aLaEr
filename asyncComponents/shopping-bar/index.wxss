@@ -3,24 +3,49 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-04-12 13:12:19
+ * @LastEditTime : 2020-05-24 16:19:35
  * @Description: 系统样式表
  */
-.fx-c {
+.fx-c-fss {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-.fx-r-sb {
+.fx-r-sbfe {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-.fx-r-sb {
+.fx-r-sbc {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fx-r-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fx-c-fec {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fx-c-sbc {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .hide {
   display: none !important;
+}
+.textHide {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .shopping-bar {
   background: #fff;
