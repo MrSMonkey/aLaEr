@@ -1,3 +1,12 @@
+/*
+ * @Author: Lichunlin
+ * @Date: 2020-04-12 13:21:15
+ * @Email: 504234675@qq.com
+ * @LastEditors  : Lichunlin
+ * @LastEditTime : 2020-05-24 16:33:20
+ * @Description: 商品卡片
+ */
+
 const app = getApp();
 Component({
 
@@ -43,13 +52,17 @@ Component({
 
   methods: {
     onAddTap(){
-      console.log('onTap');
+      console.log('onAddTap');
       this.triggerEvent('onAddTap');
     },
     onSubTap(){
-      console.log('onTap');
+      console.log('onSubTap');
       this.triggerEvent('onSubTap');
-    }
+    },
+    clickCardHandler(){
+      console.log('clickCardHandler');
+      this.triggerEvent('clickCardHandler');
+    },
     // onMyButtonTap: function () {
     //   this.setData({
     //     // 更新属性和数据的方法与更新页面数据的方法类似

@@ -1,5 +1,5 @@
 <!-- 商城首页 -->
-<shopping-layout class="shopping-layout">
+<shopping-layout class="home-layout">
   <view class="header-wrap">
     <banner banner-list="{{homeBannerList}}"/>
   </view>
@@ -31,20 +31,26 @@
           </van-sidebar>
         </view>
         <view class="goods-list-wrap">
-          <view class="good-item">
-            <good-item
-              wx:for="{{goodsList}}"
-              wx:key="id"
-              dataSource="{{item}}"
-              bind:onAddTap="onAddTap"
-              bind:onSubTap="onSubTap"
-              data-good-id="{{item.id}}"
-            />
-          </view>
+          <good-card
+            wx:for="{{goodsList}}"
+            wx:key="id"
+            dataSource="{{item}}"
+            bind:onAddTap="onAddTap"
+            bind:onSubTap="onSubTap"
+            bind:clickCardHandler="clickGoodItemHandler"
+            data-id="{{item.id}}"
+          />
         </view>
       </view>
       <view class="tab-content {{activeKey === activeKeyArr[1] ? '' : 'hide'}}">
-        <view class='good-item' bind:tap="clickMerchantItemHandler">商城商家</view>
+        <merchant-card
+          wx:for="{{merchantList}}"
+          wx:key="id"
+          dataSource="{{item}}"
+          data-id="{{item.id}}"
+          bind:clickCardHandler="clickMerchantItemHandler"
+          bind:clickLinkHandler="clickMerchantItemHandler"
+        />
       </view>
     </view>
   </view>

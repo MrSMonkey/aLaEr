@@ -1,0 +1,107 @@
+/*
+ * @Author: Lichunlin
+ * @Date: 2020-03-08 17:01:22
+ * @Email: 504234675@qq.com
+ * @LastEditors  : Lichunlin
+ * @LastEditTime : 2020-05-24 16:19:35
+ * @Description: 系统样式表
+ */
+.fx-c-fss {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.fx-r-sbfe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fx-r-sbc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fx-r-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fx-c-fec {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fx-c-sbc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hide {
+  display: none !important;
+}
+.textHide {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.merchant-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20rpx;
+}
+.merchant-card::after {
+  content: '';
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: block;
+  height: 1px;
+  background: #E5E5E5;
+  position: absolute;
+  transform: rotateX(45deg);
+}
+.merchant-card:active {
+  background: #fcfcfc;
+}
+.merchant-card .card-thumb-img {
+  padding: 0 16rpx 0 20rpx;
+}
+.merchant-card .card-thumb-img image {
+  border-radius: 6rpx;
+  width: 180rpx;
+  height: 180rpx;
+}
+.merchant-card .card-content {
+  padding: 0 20rpx 0 16rpx;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.merchant-card .card-content .merchant-info-wrap {
+  flex: 1;
+}
+.merchant-card .card-content .merchant-info-wrap .merchant-name {
+  font-size: 44rpx;
+  color: #3F3F3F;
+}
+.merchant-card .card-content .merchant-info-wrap .merchant-distance {
+  font-size: 28rpx;
+  color: #80879A;
+}
+.merchant-card .card-content .merchant-url-btn {
+  font-size: 28rpx;
+  color: #E73823;
+  padding-left: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.merchant-card .card-content .merchant-url-btn:active {
+  text-decoration: underline;
+}

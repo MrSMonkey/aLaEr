@@ -1,59 +1,117 @@
 @import "../../less/variable.less";
-.merchant-info-wrap{
-  height: 300rpx;
-  position: relative;
-  image{
-    width: 100%;
-    height: 100%;
-  }
-  .merchant-text{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    right: 0;
-    background: rgba(#fff, 0.3);
-    padding: 0 30rpx;
-    &>view{
-      height: 48rpx;
-      line-height: 48rpx;
+.merchant-layout{
+  .merchant-info-wrap{
+    padding: 30rpx 40rpx;
+    border: 1px solid @border-default;
+    border-width: 0 0 1px;
+    margin-bottom: -1px;
+    z-index: 1;
+    .merchant-info-title{
+      .fx-r-sbc();
+      align-items: stretch;
+      .merchant-name{
+        font-size: 44rpx;
+        flex: 1;
+        color: @font-default;
+        .textHide();
+      }
+      .ship-guide{
+        .fx-c-fec();
+        >view{
+          display: flex;
+          font-size: 24rpx;
+          color: @font-default2;
+          border: 1px solid @border-default;
+          border-radius: 32rpx; 
+          padding: 8rpx 12rpx;
+          margin: 0 0 0 20rpx;
+        }
+      }
+    }
+    .merchant-info-others{
+      color: @font-default2;
       font-size: 28rpx;
+      >view{
+        margin: 20rpx 0 0 ;
+      }
     }
   }
-}
-.send-tip-wrap{
-  text-align: center;
-  height: 90rpx;
-  line-height: 90rpx;
-}
-.search-wrap{
-  height: 90rpx;
-  padding: 0 30rpx;
-  display: flex;
-  align-items: center;
-  input{
-    height: 64rpx;
-    line-height: 64rpx;
-    font-size: 28rpx;
-    text-indent: 10rpx;
-    flex: 1;
+  .search-wrap{
+    height: 90rpx;
+    padding: 0 30rpx;
+    display: flex;
+    align-items: center;
+    input{
+      height: 64rpx;
+      line-height: 64rpx;
+      font-size: 28rpx;
+      text-indent: 10rpx;
+      flex: 1;
+    }
   }
-}
-.layout-css{
-  flex: 1;
-  overflow: hidden;
-  position: relative;
-}
-.goods-wrap {
-  display: flex;
-  justify-content: space-between;
-  .goods-menu-wrap{
-    width: 140rpx;
-    // height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  }
-  .goods-list-wrap{
+  .layout-css{
     flex: 1;
-    overflow-y: scroll;
+    overflow: hidden;
+    position: relative;
+  }
+  .goods-wrap {
+    display: flex;
+    justify-content: space-between;
+    .goods-menu-wrap{
+      // height: 100%;
+      width: 140rpx;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      --sidebar-selected-border-color: @light-default2; // 修改选中后默认的边框颜色
+      .van-sidebar{
+        width: 180rpx;
+        height: 100%;
+        background: @bg-default2;
+        .van-sidebar-item{
+          padding: 14rpx 0 14rpx 20rpx;
+        }
+        .van-sidebar-item{
+          padding: 14rpx 0 14rpx 20rpx;
+          background: transparent;
+        }
+        .van-sidebar-item--selected{
+          padding-top: 7px;
+          padding-bottom: 7px;
+          color: @font-light2;
+          background: @bg-light2;
+        }
+      }
+    }
+    .goods-list-wrap{
+      flex: 1;
+      overflow-y: scroll;
+    }
+  }
+  .send-introduce-wrap {
+    padding: 30rpx;
+    max-height: 40vh;
+    .fx-c-sbc();
+    &>view{
+      width: 100%;
+    }
+    .introduce-title{
+      position: relative;
+      font-size: 44rpx;
+      color: @font-default;
+      padding: 0 0 30rpx;
+      margin: 0 0 30rpx;
+      &::after{
+        .bottomBorder();
+      }
+    }
+    .introduce-content{
+      flex: 1;
+      overflow-y: scroll;
+      font-size: 28rpx;
+      color: @font-default;
+      >view{
+        line-height: 48rpx;
+      }
+    }
   }
 }

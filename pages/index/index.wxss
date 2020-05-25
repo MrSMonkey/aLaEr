@@ -3,43 +3,70 @@
  * @Date: 2020-03-08 17:01:22
  * @Email: 504234675@qq.com
  * @LastEditors  : Lichunlin
- * @LastEditTime : 2020-04-12 13:12:19
+ * @LastEditTime : 2020-05-24 17:05:35
  * @Description: 系统样式表
  */
-.fx-c {
+.fx-c-fss {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-.fx-r-sb {
+.fx-r-sbfe {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
-.fx-r-sb {
+.fx-r-sbc {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fx-r-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fx-c-fec {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fx-c-sbc {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .hide {
   display: none !important;
 }
-.send-tip-wrap {
+.textHide {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.home-layout .send-tip-wrap {
   text-align: center;
   height: 80rpx;
   line-height: 80rpx;
   color: #3F3F3F;
 }
-.main {
+.home-layout .main {
   flex: 1;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
 }
-.main .tabs-bar {
+.home-layout .main .tabs-bar {
   color: #3F3F3F;
   display: flex;
   justify-content: space-between;
 }
-.main .tabs-bar .tab-btn {
+.home-layout .main .tabs-bar .tab-btn {
   border: 1px solid #E5E5E5;
   border-width: 1px 0;
   height: 68rpx;
@@ -48,47 +75,47 @@
   text-align: center;
   color: #3F3F3F;
 }
-.main .tabs-bar .active-tab {
+.home-layout .main .tabs-bar .active-tab {
   border-color: #E73823;
   background: #E73823;
   color: #fff;
 }
-.main .tabs-content {
+.home-layout .main .tabs-content {
   flex: 1;
   overflow: hidden;
 }
-.main .tabs-content .tab-content {
+.home-layout .main .tabs-content .tab-content {
   height: 100%;
   overflow: hidden;
 }
-.main .tabs-content .goods-wrap {
+.home-layout .main .tabs-content .goods-wrap {
   display: flex;
   justify-content: space-between;
 }
-.main .tabs-content .goods-wrap .goods-menu-wrap {
+.home-layout .main .tabs-content .goods-wrap .goods-menu-wrap {
   overflow-x: hidden;
   overflow-y: scroll;
   --sidebar-selected-border-color: #fff;
 }
-.main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar {
+.home-layout .main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar {
   width: 180rpx;
   height: 100%;
   background: #F5F5F5;
 }
-.main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item {
+.home-layout .main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item {
   padding: 14rpx 0 14rpx 20rpx;
 }
-.main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item {
+.home-layout .main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item {
   padding: 14rpx 0 14rpx 20rpx;
   background: transparent;
 }
-.main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item--selected {
+.home-layout .main .tabs-content .goods-wrap .goods-menu-wrap .van-sidebar .van-sidebar-item--selected {
   padding-top: 7px;
   padding-bottom: 7px;
   color: #E73823;
   background: #fff;
 }
-.main .tabs-content .goods-wrap .goods-list-wrap {
+.home-layout .main .tabs-content .goods-wrap .goods-list-wrap {
   flex: 1;
   overflow-y: scroll;
 }

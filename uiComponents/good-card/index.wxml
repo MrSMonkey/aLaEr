@@ -1,8 +1,8 @@
 <!-- 组件 custom-component.wxml -->
-<good-item class="good-item">
+<good-card class="good-card" bind:tap="clickCardHandler">
   <van-card
     title="{{dataSource.goodName}}"
-    thumb="../../../../imgs/others/goodThumb1.jpg"
+    thumb="{{dataSource.img}}"
     lazy-load="{{true}}"
     title-class="title"
     thumb-class="thumb"
@@ -28,7 +28,6 @@
         <view wx:if="{{dataSource.buyCount > 0}}" class="buy-count">{{dataSource.buyCount}}</view>
         <addOrSub-btn bind:tap="onAddTap" icon-type="add"/>
       </view>
-      
     </view>
   </van-card>
-</good-item>
+</good-card>

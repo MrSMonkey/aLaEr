@@ -3,8 +3,12 @@
   "usingComponents": {
     "van-sidebar": "@vant/weapp/sidebar",
     "van-sidebar-item": "@vant/weapp/sidebar-item",
-    "van-dialog": "@vant/weapp/dialog",
+    "van-dialog": "/@vant/weapp/dialog",
+    "van-icon": "@vant/weapp/icon/index",
+    "banner": "../../uiComponents/banner/index",
     "shopping-layout": "../../layout/shopping-layout/index",
-    "pay-modal": "../../asyncComponents/pay-modal/index"
+    "shopping-bar": "../../asyncComponents/shopping-bar/index",
+    "pay-modal": "../../asyncComponents/pay-modal/index",
+    "good-card": "../../uiComponents/good-card/index"
   }
 }

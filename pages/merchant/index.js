@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    merchantImg: '../../imgs/banner/b_img.jpg',
+    merchantName: '红旗连锁超市金岳西路店',
+    merchantImg: '../../../../imgs/banner/b_img.jpg',
     merchantAddress: '重庆',
     merchantTel: '13588992888',
     isshowTip: false,
@@ -15,6 +16,42 @@ Page({
       {id: 3, title: '水果'},
       {id: 4, title: '副食'},
       {id: 5, title: '没想好'},
+    ],
+    goodsList: [
+      {
+        id: 1,
+        img: '../../../../imgs/others/goodThumb1.jpg',
+        goodName: '新鲜西芹',
+        merchantName: '油瓶超市',
+        count: 5001,
+        buyCount: 0,
+        unit: '斤',
+        inventoryDesc: '5001斤',
+        sallingPrice: '2.99',
+        originalPrice: '4.99',
+      }, {
+        id: 2,
+        img: '../../../../imgs/others/goodThumb2.jpg',
+        goodName: '新鲜西红柿',
+        merchantName: '油瓶超市',
+        count: 5001,
+        buyCount: 0,
+        unit: '斤',
+        inventoryDesc: '5001斤',
+        sallingPrice: '2.99',
+        originalPrice: '4.99',
+      }, {
+        id: 3,
+        img: '../../../../imgs/others/goodThumb2.jpg',
+        goodName: '新鲜西红柿',
+        merchantName: '油瓶超市',
+        count: 5001,
+        buyCount: 1,
+        unit: '斤',
+        inventoryDesc: '5001斤',
+        sallingPrice: '2.99',
+        originalPrice: '4.99',
+      }
     ],
   },
   clickSendIntroduceHandler(){

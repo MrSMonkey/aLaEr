@@ -1,26 +1,38 @@
 <!-- 商城首页 -->
-<shopping-layout class="shopping-layout">
+<shopping-layout class="merchant-layout">
+  <view class="header-wrap">
+    <banner banner-list="{{[merchantImg]}}"/>
+  </view>
   <view class="merchant-info-wrap">
-    <image class="merchant-img" mode="scaleToFill" src="{{merchantImg}}"></image>
-    <view class="merchant-text">
-      <view>地址：{{merchantAddress}}</view>
-      <view>服务电话：{{merchantTel}}</view>
+    <view class="merchant-info-title">
+      <view class="merchant-name">{{merchantName}}</view>
+      <view class="ship-guide" bind:tap="clickSendIntroduceHandler">
+        <view>配送说明，新人必看 <van-icon name="play" size="24rpx" /></view>
+      </view>
+    </view>
+    <view class="merchant-info-others">
+      <view class="address">地址：{{merchantAddress}}</view>
+      <view class="telphone">服务电话：{{merchantTel}}</view>
     </view>
   </view>
-  <view class="send-tip-wrap" bind:tap="clickSendIntroduceHandler">
-    配送说明（新客必看）
-  </view>
-  <view class="search-wrap">
+  <!-- <view class="search-wrap">
     <input class="weui-input" placeholder="占位符字体是红色的" />
-  </view>
+  </view> -->
   <view class="layout-css goods-wrap {{activeKey === activeKeyArr[0] ? '' : 'hide'}}">
     <view class="goods-menu-wrap">
       <van-sidebar active-key="{{ activeKey }}" bind:change="clickMenuItemHandler" custom-class="goods-menu">
-        <van-sidebar-item wx:for="{{menuList}}" wx:key="{{item.id}}" data-menu-id="{{item.id}}" title="{{item.title}}" />
+        <van-sidebar-item wx:for="{{menuList}}" wx:key="id" data-menu-id="{{item.id}}" title="{{item.title}}" />
       </van-sidebar>
     </view>
     <view class="goods-list-wrap">
-      <view class="good-item">商城商品</view>
+      <good-card
+        wx:for="{{goodsList}}"
+        wx:key="id"
+        dataSource="{{item}}"
+        bind:onAddTap="onAddTap"
+        bind:onSubTap="onSubTap"
+        data-id="{{item.id}}"
+      />
     </view>
   </view>
   <van-dialog
@@ -28,13 +40,46 @@
     show="{{ isshowTip }}"
   >
     <view class="send-introduce-wrap">
-      <view>说明</view>
-      <view>说明</view>
-      <view>说明</view>
-      <view>说明</view>
-      <view>说明</view>
-      <view>说明</view>
-      <view>说明</view>
+      <view class="introduce-title">配送说明</view>
+      <view class="introduce-content">
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+        <view>说明</view>
+      </view>
     </view>
   </van-dialog>
   <pay-modal

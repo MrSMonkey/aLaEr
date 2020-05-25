@@ -1,0 +1,172 @@
+/*
+ * @Author: Lichunlin
+ * @Date: 2020-03-08 17:01:22
+ * @Email: 504234675@qq.com
+ * @LastEditors  : Lichunlin
+ * @LastEditTime : 2020-05-24 18:05:06
+ * @Description: 系统样式表
+ */
+.fx-c-fss {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+.fx-r-sbfe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.fx-r-sbfs {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.fx-r-fsfs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fx-r-sbc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fx-r-cc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fx-c-fec {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.fx-c-sbc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hide {
+  display: none !important;
+}
+.textHide {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.good-detail-layout .panel-wrap {
+  border: 1rpx solid #E5E5E5;
+  border-radius: 20rpx;
+  padding: 24rpx 40rpx;
+  margin: 0 10rpx;
+}
+.good-detail-layout .panel-wrap .desc-row {
+  margin: 12rpx 0 0;
+}
+.good-detail-layout .panel-wrap .desc-row:first-child {
+  margin-top: 0;
+}
+.good-detail-layout .panel-1 {
+  margin-top: 20rpx;
+}
+.good-detail-layout .panel-1 .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.good-detail-layout .panel-1 .title .good-name {
+  flex: 1;
+  font-size: 44rpx;
+  margin: 0 30rpx 0 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.good-detail-layout .panel-1 .desc-row-1 {
+  color: #80879A;
+}
+.good-detail-layout .panel-1 .desc-row-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.good-detail-layout .panel-1 .desc-row-2 .price-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.good-detail-layout .panel-1 .desc-row-2 .price-wrap .salling-price {
+  color: #E73823;
+  font-size: 44rpx;
+}
+.good-detail-layout .panel-1 .desc-row-2 .price-wrap .original-price {
+  font-size: 24rpx;
+  color: #B9B9B9;
+  text-decoration: line-through;
+  margin: 4rpx 0 0 8rpx;
+}
+.good-detail-layout .panel-1 .desc-row-2 .btn-wrap {
+  display: inline-block;
+}
+.good-detail-layout .panel-1 .desc-row-2 .btn-wrap .add-btn {
+  border-radius: 34rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: #E73823;
+  background: #E73823;
+  color: #fff;
+  padding: 8rpx 30rpx;
+}
+.good-detail-layout .panel-1 .desc-row-2 .btn-wrap .add-btn .van-image {
+  display: block;
+}
+.good-detail-layout .panel-2 {
+  margin-top: 30rpx;
+}
+.good-detail-layout .panel-2 .desc-row {
+  color: #80879A;
+}
+.good-detail-layout .panel-2 .desc-row text {
+  color: #3F3F3F;
+}
+.good-detail-layout .panel-3 {
+  margin-top: 30rpx;
+}
+.good-detail-layout .panel-3 .title {
+  font-size: 36rpx;
+  text-align: left;
+  color: #3F3F3F;
+}
+.good-detail-layout .panel-3 .desc-row {
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F4F4F4;
+  padding: 24rpx 0;
+  border-radius: 8rpx;
+}
+.good-detail-layout .panel-3 .desc-row > view {
+  padding: 0 0 0 20rpx;
+  color: #B9B9B9;
+  flex: 1;
+  position: relative;
+}
+.good-detail-layout .panel-3 .desc-row > view.right::after {
+  content: '';
+  left: 0;
+  top: -8rpx;
+  bottom: -8rpx;
+  display: block;
+  width: 1px;
+  background: #D0D0D0;
+  position: absolute;
+  transform: rotateX(45deg);
+}
+.good-detail-layout .panel-3 .desc-row > view text {
+  color: #80879A;
+}

@@ -5,19 +5,13 @@
     <view class="text">我的</view>
   </view>
   <view class="goods-info-wrap">
-    <van-icon name="shopping-cart-o" size="50rpx" color="{{iconColor}}"/>
-    <view>已选商品<text>72</text>件</view>
+    <van-icon name="shopping-cart-o" size="50rpx" color="{{iconColor}}" info="99+"/>
+    <view>合计：<text class="unit">￥</text> <text class="amount-number">72.00</text> 元</view>
   </view>
   <view class="shopping-btn" bind:tap="clickBookBtnHandler">
     <view>马上下单</view>
   </view>
   <van-transition show="{{ isShowExtraMenu }}">
-    <!-- <view class="extra-menu-wrap">
-      <view class="item">我的订单</view>
-      <view class="item">地址管理</view>
-      <view class="item">免责声明</view>
-      <view class="item">我要投诉</view>
-    </view> -->
     <van-grid class="extra-menu-wrap" custom-class="custom-class">
       <van-grid-item icon="orders-o" text="我的订单" />
       <van-grid-item icon="location-o" text="地址管理" />

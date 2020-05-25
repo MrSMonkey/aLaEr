@@ -1,0 +1,47 @@
+@import "../../less/variable.less";
+.merchant-card{
+  .fx-r-sbc();
+  position: relative;
+  &::after{
+    .bottomBorder();
+  }
+  padding: 20rpx;
+  @padding2: 20rpx;
+  @padding3: 16rpx;
+  &:active{
+    background: @bg-active;
+  }
+  .card-thumb-img {
+    padding: 0 @padding3 0 @padding2;
+    image {
+      border-radius: 6rpx;
+      width: 180rpx;
+      height: 180rpx;
+    }
+  }
+  .card-content {
+    padding: 0 @padding2 0 @padding3;
+    flex: 1;
+    .fx-r-sbc();
+    .merchant-info-wrap{
+      flex: 1;
+      .merchant-name{
+        font-size: 44rpx;
+        color: @font-default;
+      }
+      .merchant-distance{
+        font-size: 28rpx;
+        color: @font-default2;
+      }
+    }
+    .merchant-url-btn{
+      font-size: 28rpx;
+      color: @font-default4;
+      padding-left: 20rpx;
+      .fx-r-cc();
+      &:active{
+        text-decoration: underline;
+      }
+    }
+  }
+}
